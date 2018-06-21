@@ -12,8 +12,9 @@ if($method == 'POST'){
 	
         $speech="El rio esta en 1.23 metros";
 	$response = new \stdClass();
-	$response->speech = $speech;
-	$response->displayText = $speech;
+	//$response->speech = $speech;
+	//$response->displayText = $speech;
+	$response->fulfillmentText = $speech;
 	$response->source = "webhook";
 	echo json_encode($response);
 }
