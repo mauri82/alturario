@@ -36,7 +36,7 @@ switch ($estado_tmp){
 		$estado='';
 		break;
 }
-$respuesta="El río está en ".$altura." metros, ".$estado;
+$respuesta="La altura del rio es de ".$altura." metros, ".$estado;
 // Fin altura Rosario
 
 
