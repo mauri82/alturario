@@ -9,24 +9,8 @@ if($method == 'POST'){
 
 	$text = $json->result->parameters->text;
 
-	switch ($text) {
-		case 'hi':
-			$speech = "Hi, Nice to meet you";
-			break;
-
-		case 'bye':
-			$speech = "Bye, good night";
-			break;
-
-		case 'anything':
-			$speech = "Yes, you can type anything here.";
-			break;
-		
-		default:
-			$speech = "Sorry, I didnt get that. Please ask me something else.";
-			break;
-	}
-
+	
+        $speech="El río esta en 1.23 metros";
 	$response = new \stdClass();
 	$response->speech = $speech;
 	$response->displayText = $speech;
@@ -35,7 +19,7 @@ if($method == 'POST'){
 }
 else
 {
-	echo "Metodo no permitido";
+	echo "Altura del Rio - Metodo no permitido";
 }
 
 ?>
