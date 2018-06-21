@@ -10,7 +10,7 @@ if($method == 'POST'){
 	$text = $json->result->parameters->text;
 
 	
-        $speech="El río esta en 1.23 metros";
+        $speech="El rio esta en 1.23 metros";
 	$response = new \stdClass();
 	$response->speech = $speech;
 	$response->displayText = $speech;
