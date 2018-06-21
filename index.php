@@ -19,7 +19,7 @@ if($method == 'POST'){
 }
 else
 {
-	echo "Altura del Rio - Metodo no permitido";
+	echo "Altura del Rio - Metodo no permitido (solo POST)";
 }
 
 ?>
