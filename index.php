@@ -29,8 +29,8 @@ switch ($estado_tmp){
 	case 'CRECE':
 		$estado='crece';
 		break;
-	case 'CRECE':
-		$estado='BAJA';
+	case 'BAJA':
+		$estado='baja';
 		break;		
 		default:
 		$estado='';
