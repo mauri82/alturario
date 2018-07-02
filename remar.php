@@ -59,10 +59,10 @@ if ($esSur=='si')
 }
 
 $response = new \stdClass();
-$response->speech = $salida;
-$response->displayText = $salida;
-$response->return = $salida;
+//$response->speech = $salida;
+//$response->displayText = $salida;
+//$response->return = $salida;
 $response->fulfillmentText = $salida;
-$response->source = "webhook";
+//$response->source = "webhook";
 echo json_encode($response);
 ?>
