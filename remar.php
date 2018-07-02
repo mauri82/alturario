@@ -60,7 +60,7 @@ if ($esSur=='si')
 
 $response = new \stdClass();
 $response->speech = $salida;
-$response->displayText = $speech;
+$response->displayText = $salida;
 $response->source = "webhook";
 echo json_encode($response);
 ?>
