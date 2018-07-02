@@ -43,17 +43,17 @@ if ($esSur=='si')
     //es sur, hay que ver la velocidad
     if ($vientoVelocidad>=15)
     {
-        $salida='Puede estar picado, va a soplar  del '.$vientoDireccionTexto.' a '.$vientoVelocidad.' kilometros por hora';
+        $salida='Puede estar picado, va a soplar  del '.$vientoDireccionTexto.' a '.$vientoVelocidad.' kilómetros por hora';
     }else{
-        $salida='Va a soplar '.$vientoDireccionTexto.' pero solo a '.$vientoVelocidad.' kilometros por hora';
+        $salida='Va a soplar '.$vientoDireccionTexto.' pero solo a '.$vientoVelocidad.' kilómetros por hora';
     }
 }else{
     //No hay sur, se puede remar
     if ($vientoVelocidad>=20)
     {
-        $salida='No hay problemas para remar, pero ojo que el viento va a ser '.$vientoDireccionTexto.' a '.$vientoVelocidad.' kilometros por hora';
+        $salida='No hay problemas para remar, pero ojo que el viento va a ser '.$vientoDireccionTexto.' a '.$vientoVelocidad.' kilómetros por hora';
     }else{
-        $salida='No hay problemas para remar, el viento va a ser '.$vientoDireccionTexto.' a '.$vientoVelocidad.' kilometros por hora';
+        $salida='No hay problemas para remar, el viento va a ser '.$vientoDireccionTexto.' a '.$vientoVelocidad.' kilómetros por hora';
     }
     
 }
@@ -62,7 +62,7 @@ $response = new \stdClass();
 //$response->speech = $salida;
 //$response->displayText = $salida;
 //$response->return = $salida;
-$response->fulfillmentText = $salida;
+$response->fulfillmentText =  utf8_encode($salida);
 //$response->source = "webhook";
 echo json_encode($response);
 ?>
