@@ -62,7 +62,7 @@ $response = new \stdClass();
 //$response->speech = $salida;
 //$response->displayText = $salida;
 //$response->return = $salida;
-$response->fulfillmentText =  utf8_encode($salida);
+$response->fulfillmentText =  $salida;
 //$response->source = "webhook";
 echo json_encode($response);
 ?>
