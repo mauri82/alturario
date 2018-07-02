@@ -11,6 +11,9 @@ switch ($intent){
 		$fechaParm=$json->queryResult->parameters->date;
 		require('remar.php');
 		break;
+	case 'windguru':
+		require('windguru.php');
+		break;		
 	default:
 		print 'no se....';
 		break;
