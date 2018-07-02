@@ -58,5 +58,9 @@ if ($esSur=='si')
     
 }
 
-print $salida;
+$response = new \stdClass();
+$response->speech = $salida;
+$response->displayText = $speech;
+$response->source = "webhook";
+echo json_encode($response);
 ?>
