@@ -38,10 +38,10 @@ switch ($estado_tmp){
 $respuesta="El rio esta en ".$altura." metros, ".$estado;
 
 $response = new \stdClass();
-$response->speech = $respuesta;
-$response->displayText = $respuesta;
-$response->return = $respuesta;
+//$response->speech = $respuesta;
+//$response->displayText = $respuesta;
+//$response->return = $respuesta;
 $response->fulfillmentText = $respuesta;
-$response->source = "webhook";
+//$response->source = "webhook";
 echo json_encode($response);
 ?>
