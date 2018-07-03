@@ -2,7 +2,7 @@
 $solicitud = file_get_contents("php://input");
 $json = json_decode($solicitud);
 $intent = $json->queryResult->intent->displayName;
-
+header('Content-Type: application/json');
 switch ($intent){
 	case 'Altura Rio':
 		require('rio.php');
