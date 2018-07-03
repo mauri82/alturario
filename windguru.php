@@ -21,8 +21,7 @@ $salida='{
         ]
       }
     }
-  ],
-  "outputContexts": []
+  ]
 }';  
 echo $salida;
 ?>
