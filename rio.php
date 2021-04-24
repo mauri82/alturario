@@ -35,7 +35,7 @@ switch ($estado_tmp){
 		$estado='';
 		break;
 }
-$respuesta="El río está en ".$altura." metros, ".$estado;
+$respuesta="El río está en ".$altura." metros, ".$estado. " gracias vuelva prontos";
 
 $response = new \stdClass();
 //$response->speech = $respuesta;
