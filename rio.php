@@ -1,5 +1,5 @@
 <?php
-$url='http://sitiowcontingencia.prefecturanaval.gov.ar/alturas/index.php';
+$url='https://contenidosweb.prefecturanaval.gob.ar/alturas/index.php';
 $html = file_get_contents($url);
 //$inicio=strpos($html,'<table class="table table-hover fpTable">');
 //$fin=strpos($html,'<table class="table table-hover fpTable">');
